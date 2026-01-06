@@ -1,0 +1,299 @@
+<!-- 
+Name: Tyler Eck 
+Website: Resume/CV Website
+Purpose: Created for the purpose of displaying CV and using it as a static website example for Clouds Azure lab exercise.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler Edwardo Eck | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0f1a;
+            --card-bg: #161e2d;
+            --text-main: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .links a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 60px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            color: var(--text-main);
+        }
+
+        h2::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+            margin-left: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 28px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        .card h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .card p {
+            margin: 4px 0;
+            font-size: 0.95rem;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            margin: 16px 0 0 0;
+            padding-left: 18px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        li { margin-bottom: 8px; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .skill-item {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-item strong {
+            display: block;
+            color: var(--accent);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 100px;
+            padding-bottom: 40px;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.2rem; }
+            .container { padding: 40px 16px; }
+            .card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Tyler Edwardo Eck</h1>
+        <p>Security & Cloud Computing | Big Data Security Specialization</p>
+        <div class="links">
+            <a href="mailto:tyler.eck@eurecom.fr">Email</a> 
+            <a href="https://www.linkedin.com/in/tylereck81" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Tylereck81/" target="_blank">GitHub</a> 
+        </div>
+    </header>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="card">
+            <span class="date">Sep. 2025 – Aug. 2026</span>
+            <h3>EURECOM, France</h3> 
+            <p><strong>MSc in Security and Cloud Computing (SECCLO) - Dual Degree</strong></p> 
+            <ul>
+                <li>Erasmus Mundus Scholarship (Full-ride)</li>
+                <li>Specialization: Big Data Security</li> 
+                <li>Coursework: Distributed Systems and Cloud Computing, Digital Forensics, System & Network Security, Security and Privacy for Big Data and Cloud</li> 
+            </ul>
+        </div>
+
+        <div class="card">
+            <span class="date">Sep. 2023 – Aug. 2024</span> 
+            <h3>Aalto University, Finland</h3> 
+            <p><strong>MSc in Security and Cloud Computing (SECCLO)</strong></p> 
+            <ul>
+                <li>Erasmus Mundus Scholarship (Full-ride)</li>
+                <li>Coursework: Cloud Software & Systems, Full Stack Web Development, Information Security, Network Security, Platform Security, Cryptography</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <span class="date">Sep. 2019 – May 2023</span> 
+            <h3>National Dong Hwa University, Taiwan</h3> 
+            <p><strong>BSc in Computer Science & Information Engineering</strong></p> 
+            <ul>
+                <li>Taiwan MOFA Scholarship (Full-ride)</li>
+                <li>Valedictorian (Rank 1/49) | Final GPA: 4.26/4.5</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="card">
+            <span class="date">May 2024 – Aug. 2024</span> 
+            <h3>Research Assistant - Aalto University</h3> 
+            <p>Technology Lead for a CHI 2026 study on Attention-Capture Damaging Patterns in TikTok</p>
+            <ul>
+                <li>Operated Tobii Pro Spark eye-tracking systems and performed gaze analysis using Python</li>
+                <li>Developed Python tools and data pipelines to parse TikTok JSON datasets for high-fidelity prototypes</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <span class="date">Sep. 2020 – May 2023</span> 
+            <h3>Teaching Assistant - National Dong Hwa University</h3> 
+            <p>Conducted interactive lab sessions for guiding students in solving programming related problems</p>
+            <ul>
+                <li>Courses Instructed: Lab of Computer Programming I (2020-2023), Lab of Computer Programming II (2020-2023), Lab of Data Structures (2021-2023)</li> 
+                <li>Managed lab logistics, including exercise sessions, assessments, feedback, and grading</li> 
+            </ul>
+        </div>
+
+        <div class="card">
+            <span class="date">May 2020 – May 2021</span>
+            <h3>Software Developer Intern - National Dong Hwa University</h3> 
+            <p>Python GUI developer for Polygame AI models</p>
+            <ul>
+                <li>Designed and created Python-based GUIs for Facebook Polygame AI models, improving playing time by 50%.</li> 
+                <li>Represented the NDHU Artificial Intelligent Research Team in the 2020 TCGA Computer Game Tournament as an official operator for Havannah and Minishogi games.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><strong>Programming Languages</strong>Python, C/C++, HTML, JS(React), SQL</div>
+            <div class="skill-item"><strong>Cloud</strong>AWS (EC2, S3, EKS, SQS, SNS, IAM, Cloudfront), GCP (Compute Engine, Cloud Storage, Cloud Run)</div> 
+            <div class="skill-item"><strong>Virtualization</strong>Vagrant, Docker, Kubernetes</div> 
+            <div class="skill-item"><strong>Languages</strong>English (Native), Chinese Mandarin (TOCFL A2), Spanish (A1)</div> 
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3><a href="https://github.com/Tylereck81/Automated-Pulse-Sensing-Tool-" target="_blank">Automated Pulse Sensing Tool</a></h3>
+            <ul>
+                <li>Led the research and development of an automation tool designed to detect and measure pulses for Traditional Chinese Medicine (TCM) patients in Taiwan</li>
+                <li>Constructed a physical prototype using a recycled 3D printer and an Arduino board along with an intuitive Python GUI for tool control and result uploads via Firebase</li>
+                <li>Collaborated with biomedical researchers to calibrate pulse sensitivity and validate readings, improving accuracy by over 20%.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3><a href="https://github.com/Tylereck81/Rocket-League-Rank-Classifier" target="_blank">Rocket League Rank Classifier</a></h3>
+            <ul>
+                <li>Developed Python classifiers to determine what factors influence a player’s rank in the vehicular soccer game Rocket League</li>
+                <li>Utilized the Selenium and BeautifulSoup Python libraries to automate scraping player’s data from the public Rocket League Tracker website</li>
+                <li>Analyzed differences in accuracies from multiple machine learning models including Logistic Regression, Random Forest, and SVC</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Tyler Edwardo Eck • Built with HTML/CSS</p>
+    </footer>
+</div>
+
+</body>
+</html>
